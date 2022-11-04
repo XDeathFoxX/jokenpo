@@ -35,6 +35,12 @@ def jokenpo():
             print('Você venceu,Pedra vence Tesoura')
             print()
             jogar_novamente()  
+        
+        elif jogada == pc :
+            print()
+            print(f'Empate , {jogada.title()} não vence {jogada.title()}')
+            print()
+            jogar_novamente()
             
         elif jogada == pedra and pc == papel:
             print()
@@ -66,24 +72,6 @@ def jokenpo():
             print()
             jogar_novamente()
 
-        elif jogada and pc == tesoura:
-            print()
-            print('Empate,Tesoura não vence Tesoura    ')
-            print()
-            jogar_novamente()
-
-        elif jogada == papel and pc == papel:
-            print()
-            print('Empate,Papel não vence Papel   ')
-            print()
-            jogar_novamente()
-
-        elif jogada and pc == pedra:
-            print()
-            print('Empate,Pedra não vence Pedra  ')
-            print()
-            jogar_novamente()
-
     else:
         while jogada not in escolhas:
             print()
@@ -98,6 +86,13 @@ def jokenpo():
                 print()
                 jogar_novamente()  
             
+            elif jogada == pc :
+                print()
+                print(f'Empate , {jogada.title()} não vence {jogada.title()}')
+                print()
+                jogar_novamente()
+            
+
             elif jogada == pedra and pc == papel:
                 print()
                 print('Você perdeu,Papel vence Pedra')
@@ -125,24 +120,6 @@ def jokenpo():
             elif jogada == papel and pc == tesoura:
                 print()
                 print('Você perdeu,Tesoura vence Papel')
-                print()
-                jogar_novamente()
-
-            elif jogada and pc == tesoura:
-                print()
-                print('Empate,Tesoura não vence Tesoura    ')
-                print()
-                jogar_novamente()
-
-            elif jogada == papel and pc == papel:
-                print()
-                print('Empate,Papel não vence Papel   ')
-                print()
-                jogar_novamente()
-
-            elif jogada and pc == pedra:
-                print()
-                print('Empate,Pedra não vence Pedra  ')
                 print()
                 jogar_novamente()
 
